@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <title>The Spot</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/style2.css" rel="stylesheet" type="text/css">
+      <link href="css/style3.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <script src="js/index.js"></script>
+      <script src="js/formDropdown.js"></script>
+      <script src="js/myForm2.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+      <div id="mainWrapper">
+
+            <header id="navbar">
+                  <nav class="navbar-container container">
+                        <a href="#mainWrapper" class="home-link">
+                              <div class="navbar-logo"></div>
+                              The Spot</a>
+                        <button type="button" class="navbar-toggle" aria-label="Open navigation menu" onclick="navBarButtonClick()">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-menu">
+                              <ul class="navbar-links">
+                                    <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+                                    <li class="navbar-item"><a class="navbar-link" href="#menu">Menu</a></li>
+                                    <li class="navbar-item"><a class="navbar-link" href="#order">Order</a></li>
+                                    <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+            </header>
+
+            <div id="home">
+                  <div id="homeWrapper">
+                        <div id="innerHomeWrapper">
+                              <div class="homeInfoContainer" id="homeItem1">
+                                    <p>Order Online Now<br> First Delivery is Free </p>
+                                    <a id="homeButton1" href="#order" class="orderDeliveryButton">Order Delivery</a>
+                              </div>
+                              <div class="homeInfoContainer" id="homeItem2">
+                                    <p>Want to skip the line?<br> Order Ahead!</p>
+                                    <a id="homeButton2" href="#menu" class="orderTakeoutButton">Order Takeout</a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="about" class="aboutContainer">
+                  <div id="aboutWrapper">
+
+                        <div class="aboutPContainer">
+                              <p id="aboutP1" class="medium1P">"Always hits The Spot"</p>
+                        </div>
+
+                        <div class="aboutPContainer">
+                              <p id="aboutP2" class="xsmall2P">Quarantine Policy: 
+                              </p>
+                        </div>
+
+                        <div class="aboutPContainer">
+                        
+                              <p id="aboutP3" class="xsmall1P">Face mask policy: All customers and employees are required to wear face coverings/masks over their nose and mouth upon entry. Once you are seated at your table, you may remove the mask to enjoy your delicious food and beer, but we ask that you please put it back on to visit the restroom, peruse in our merch shop, and exit.
+                              </p>
+                        </div>
+                        <div class="aboutPContainer">
+                              <p id="aboutP4" class="xsmall1P">Physical distancing: We’ve rearranged our space to create 6ft distance between tables and dining groups at all times. We will not be offering bar seating or open seating, and you will have to have a table to come in. Reservations are preferred at Miramar, while Little Italy is first come, first serve. When you visit either location, you’ll notice floor signs to assist in flow – please bear with us and adhere to distanced guidelines to protect our guests and team members.
+                              </p>
+                        </div>
+                        <div class="aboutPContainer">
+                              <p id="aboutP5" class="xsmall1P">
+                                    Cleanliness and sanitation: Our restaurants have gone through deep cleanings and we’ve increased our already meticulous sanitation processes to reduce risk. Dedicated team members will be sanitizing counter surfaces, restrooms, door handles, and tables and chairs between every seating.
+                                    </p>
+                        </div>
+                        <div class="aboutPContainer">
+                        
+                              <p id="aboutP6" class="xsmall1P">
+                                    Team members: We will be conducting daily wellness and temperature checks with our staff. Any team member displaying signs of illness will be sent home.
+      
+                                    </p>
+                        </div>
+
+                        <div class="aboutPContainer">
+                              <p id="aboutP7" class="xsmall1P">
+                                    Contactless ordering: We’ve implemented QR codes at every table, which are set to display our beer and food menu in real time.  If you prefer contactless ordering, simply point your smartphone camera at the code and our beer and food menu will display immediately. You will able to order directly from the table and/or add beer and food items to a preexisting tab.
+                                    </p>
+                        </div>
+                        <div class="aboutPContainer">
+                              <p id="aboutP8" class="large1P">We cant wait to see you again!</p>
+                        </div>
+                  </div>
+
+            </div>
+
+            <div id="menu">
+                  <div id="menuWrapper">
+
+                        <img id="pictureOfMenu" src="images/menu.JPG"/>
+
+                  </div>
+            </div>
+
+            <div id="order">
+                  <div id="orderWrapper">
+
+                        <div id="orderForm1">
+                              <form id="ContactInfoForm">
+                                    <h3 class="foodTitles">Order Information</h3>
+                                    <h5>*delivery only</h5>
+                                    <div class="row">
+                                          <div class="col-1">
+                                                <label for="orderName">Name</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <input type="text" id="orderName" name="orderName" placeholder="Order name..">
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-3">
+                                                <label for="lname">Address</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <input type="text" id="orderAddress" name="address" placeholder="1234 First St">
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-1">
+                                                <label for="lname">City</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <input type="text" id="orderAddress" name="address" placeholder="San Diego">
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-1">
+                                                <label for="lname">State</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <input type="text" id="orderAddress" name="address" placeholder="California">
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-1">
+                                                <label for="lname">Zip Code</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <input type="text" id="orderAddress" name="address" placeholder="92108">
+                                          </div>
+                                    </div>
+
+                                    <div class="row">
+                                          <div class="col-1">
+                                                <label for="subject">Delivery Notes</label>
+                                          </div>
+                                          <div class="col-3">
+                                                <textarea id="subject" name="subject" placeholder="Extra Hot Sauce.." style="height:80px"></textarea>
+                                          </div>
+                                    </div>
+                              </form>
+                        </div>
+<!-- I had trouble creating a select container followed by a option, so i had to leave the option instead. I was having trouble with the arrays-->
+                        <div id="orderForm2">
+                              <div id="menu2Form">
+
+                                    <div id="menu1">
+                                          <h3 class="foodTitles">PLATES TO SHARE</h3>
+                                          <form id="myForm1" class="secondFormContainers">
+                                                <select id="form1Select_1" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form1Select_2" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form1Select_3" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form1Select_4" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form1Select_5" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>                                                
+                                          </form>
+                                          <div class="actionButtons">
+                                                <button id="addButton1" class="squareButton addItemButton" onclick="revealOrderFormItem1()">Add Item</button>
+
+                                                <button id="deleteButton1"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer1()">Remove Item</button>
+                                          </div>
+                                    </div>
+                                    <div id="menu2">
+                                          <h3 class="foodTitles">SALADS</h3>
+                                          <form id="myForm2" class="secondFormContainers">
+                                                <select id="form2Select_1" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">SALADS</option>
+                                                </select>
+                                                <select id="form2Select_2" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">SALADS</option>
+                                                </select>
+                                                <select id="form2Select_3" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">SALADS</option>
+                                                </select>
+                                                <select id="form2Select_4" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">SALADS</option>
+                                                </select>
+                                                <select id="form2Select_5" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">SALADS</option>
+                                                </select>                                                
+                                          </form>
+                                          </form>
+                                          <div class="actionButtons">
+                                                <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem2()">Add Item</button>
+                                                <button id="deleteButton2"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer2()">Remove Item</button>
+                                          </div>
+                                    </div>
+                                    <div id="menu3">
+                                          <h3 class="foodTitles">LOCAL FAVORITES</h3>
+                                          <form id="myForm3" class="secondFormContainers">
+                                                <select id="form3Select_1" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form3Select_2" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form3Select_3" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form3Select_4" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form3Select_5" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                          </form>
+                                          <div class="actionButtons">
+                                                <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem3()">Add Item</button>
+                                                <button id="deleteButton3"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer3()">Remove Item</button>
+                                          </div>
+                                    </div>
+                                    <div id="menu4">
+                                          <h3 class="foodTitles">MAINS</h3>
+                                          <form id="myForm4" class="secondFormContainers">
+                                                <select id="form4Select_1" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form4Select_2" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form4Select_3" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form4Select_4" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form4Select_5" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                          </form>
+                                          <div class="actionButtons">
+                                                <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem4()">Add Item</button>
+                                                <button id="deleteButton4"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer4()">Remove Item</button>
+                                          </div>
+                                    </div>
+                                    <div id="menu5">
+                                          <h3 class="foodTitles">DESSERTS</h3>
+                                          <form id="myForm5" class="secondFormContainers">
+                                                <select id="form5Select_1" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form5Select_2" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form5Select_3" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form5Select_4" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                                <select id="form5Select_5" class="myFormSelect hiddenContainerForForm">
+                                                      <option class="optionClass">PLATES TO SHARE</option>
+                                                </select>
+                                          </form>
+                                          <div class="actionButtons">
+                                                <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem5()">Add Item</button>
+                                                <button id="deleteButton5" class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer5()">Remove Item</button>
+                                          </div>
+                                    </div>
+                                    <div id="menu2Submit">
+                                          <button  id="completeOrder" type="button" aria-label="Order Confirmation" class="popup" onclick="myFunctionPopup()">
+                                                <a>Confirm Order!</a>
+                                                <span class="popuptext" id="myPopup">Order Has been Placed!</span>
+                                          </button>
+                                    </div>
+
+
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+
+
+            <div id="contact" class="contactContainer">
+                  <div class="contactWrapper">
+                        <div class="mapWrapper">
+      
+                        
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18951.647190677293!2d-117.25405300509748!3d32.89262718462748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d9495b74b516700!2sLa%20Jolla%20Trail!5e0!3m2!1sen!2sus!4v1599067496941!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        
+                        </div>
+                        <div class="footerWrapper">
+
+                              <p>Copyright &copy; The Spot 2020</p>
+      
+                        </div>
+                  </div>
+            </div>
+
+      </div>
+
+      <script>// When the user clicks on div, open the popup
+            function myFunctionPopup() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                  }</script>
+      <script src="js/index.js"></script>
+      <script src="js/formDropdown.js"></script>
+      <script src="js/myForm2.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
