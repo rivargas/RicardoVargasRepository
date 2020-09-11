@@ -11,7 +11,6 @@
       <link href="css/style.css" rel="stylesheet" type="text/css">
       <link href="css/style2.css" rel="stylesheet" type="text/css">
       <link href="css/style3.css" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
       <script src="js/index.js"></script>
       <script src="js/formDropdown.js"></script>
@@ -173,10 +172,9 @@
                         </div>
 <!-- I had trouble creating a select container followed by a option, so i had to leave the option instead. I was having trouble with the arrays-->
                         <div id="orderForm2">
-                              <div id="menu2Form">
 
                                     <div id="menu1">
-                                          <h3 class="foodTitles">PLATES TO SHARE</h3>
+                                          <h3 id="title1" class="foodTitles">PLATES TO SHARE</h3>
                                           <form id="myForm1" class="secondFormContainers">
                                                 <select id="form1Select_1" class="myFormSelect hiddenContainerForForm">
                                                       <option class="optionClass">PLATES TO SHARE</option>
@@ -194,14 +192,14 @@
                                                       <option class="optionClass">PLATES TO SHARE</option>
                                                 </select>                                                
                                           </form>
-                                          <div class="actionButtons">
+                                          <div id="form1Button1" class="actionButtons">
                                                 <button id="addButton1" class="squareButton addItemButton" onclick="revealOrderFormItem1()">Add Item</button>
 
                                                 <button id="deleteButton1"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer1()">Remove Item</button>
                                           </div>
                                     </div>
                                     <div id="menu2">
-                                          <h3 class="foodTitles">SALADS</h3>
+                                          <h3 id="title2" class="foodTitles">SALADS</h3>
                                           <form id="myForm2" class="secondFormContainers">
                                                 <select id="form2Select_1" class="myFormSelect hiddenContainerForForm">
                                                       <option class="optionClass">SALADS</option>
@@ -220,13 +218,13 @@
                                                 </select>                                                
                                           </form>
                                           </form>
-                                          <div class="actionButtons">
+                                          <div id="form2Button2" class="actionButtons">
                                                 <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem2()">Add Item</button>
                                                 <button id="deleteButton2"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer2()">Remove Item</button>
                                           </div>
                                     </div>
                                     <div id="menu3">
-                                          <h3 class="foodTitles">LOCAL FAVORITES</h3>
+                                          <h3 id="title3" class="foodTitles">LOCAL FAVORITES</h3>
                                           <form id="myForm3" class="secondFormContainers">
                                                 <select id="form3Select_1" class="myFormSelect hiddenContainerForForm">
                                                       <option class="optionClass">PLATES TO SHARE</option>
@@ -244,13 +242,13 @@
                                                       <option class="optionClass">PLATES TO SHARE</option>
                                                 </select>
                                           </form>
-                                          <div class="actionButtons">
+                                          <div id="form3button3" class="actionButtons">
                                                 <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem3()">Add Item</button>
                                                 <button id="deleteButton3"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer3()">Remove Item</button>
                                           </div>
                                     </div>
                                     <div id="menu4">
-                                          <h3 class="foodTitles">MAINS</h3>
+                                          <h3 id="title4" class="foodTitles">MAINS</h3>
                                           <form id="myForm4" class="secondFormContainers">
                                                 <select id="form4Select_1" class="myFormSelect hiddenContainerForForm">
                                                       <option class="optionClass">PLATES TO SHARE</option>
@@ -268,7 +266,7 @@
                                                       <option class="optionClass">PLATES TO SHARE</option>
                                                 </select>
                                           </form>
-                                          <div class="actionButtons">
+                                          <div id="" class="actionButtons">
                                                 <button id="addButton" class="squareButton addItemButton" onclick="revealOrderFormItem4()">Add Item</button>
                                                 <button id="deleteButton4"  class="squareButton2 removeItemButton" onclick="removeLastItemFormContainer4()">Remove Item</button>
                                           </div>
@@ -303,9 +301,6 @@
                                                 <span class="popuptext" id="myPopup">Order Has been Placed!</span>
                                           </button>
                                     </div>
-
-
-                              </div>
                         </div>
                   </div>
 
